@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MeConta - Controle Financeiro Familiar com IA e WhatsApp</title>
+    
+    <!-- Canonical Tag (SEO Hygiene) -->
+    <link rel="canonical" href="https://meconta.app/" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LLX3PFT8TT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-LLX3PFT8TT');
+    </script>
+
+    <!-- Schema.org Data (GEO/Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "MeConta",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web, Android, iOS",
+      "description": "O App de finanças descomplicado: Classificação automática com IA, importação de extratos e lançamentos pelo WhatsApp.",
+      "offers": {
+        "@type": "Offer",
+        "price": "9.90",
+        "priceCurrency": "BRL"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      },
+      "featureList": "Integração WhatsApp, Leitura de Extratos OFX/PDF, Classificação com IA, Controle Familiar Compartilhado"
+    }
+    </script>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="O App de finanças descomplicado: Classificação automática com IA, importação de extratos e lançamentos pelo WhatsApp. Organize as contas da família sem esforço." />
+    <meta name="keywords" content="controle financeiro familiar, app para casal, finanças no whatsapp, classificação automática ia, importar extrato bancário, inteligência artificial finanças" />
+    <meta name="author" content="MeConta Inc." />
+    <meta name="theme-color" content="#f43f5e" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://meconta.app/" />
+    <meta property="og:title" content="MeConta - Controle Financeiro Familiar com IA" />
+    <meta property="og:description" content="Sua vida financeira organizada automaticamente pela IA. Envie comprovantes no WhatsApp ou importe extratos e deixe o resto com a gente." />
+    <meta property="og:image" content="https://meconta.app/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://meconta.app/" />
+    <meta property="twitter:title" content="MeConta - IA Financeira no WhatsApp" />
+    <meta property="twitter:description" content="Adeus planilhas manuais. Importe extratos, lance no WhatsApp e visualize seus sonhos com IA." />
+    <meta property="twitter:image" content="https://meconta.app/og-image.jpg" />
+
+    <!-- Favicon (Updated to match Flat Design Logo) -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M230 60H430C446.569 60 460 73.4315 460 90V260C460 276.569 446.569 290 430 290H230C213.431 290 200 276.569 200 260V90C200 73.4315 213.431 60 230 60Z' fill='%2385c0a8'/%3E%3Cpath d='M200 100H400C416.569 100 430 113.431 430 130V300C430 316.569 416.569 330 400 330H200C183.431 330 170 316.569 170 300V130C170 113.431 183.431 100 200 100Z' fill='%23509573'/%3E%3Cpath d='M90 150H370C403.137 150 430 176.863 430 210V350C430 383.137 403.137 410 370 410H150L60 470V210C60 176.863 86.8629 150 120 150H90Z' fill='%23f43f5e' stroke='white' stroke-width='10'/%3E%3Ccircle cx='160' cy='280' r='25' fill='white'/%3E%3Ccircle cx='245' cy='280' r='25' fill='white'/%3E%3Ccircle cx='330' cy='280' r='25' fill='white'/%3E%3C/svg%3E" type="image/svg+xml">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN for immediate preview support) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Nunito', 'sans-serif'],
+            },
+            colors: {
+              coral: {
+                50: '#fff1f2',
+                100: '#ffe4e6',
+                200: '#fecdd3',
+                300: '#fda4af',
+                400: '#fb7185',
+                500: '#f43f5e', 
+                600: '#e11d48',
+                700: '#be123c',
+              },
+              sage: {
+                50: '#f0f7f4',
+                100: '#d8ede3',
+                200: '#b5dbcb',
+                300: '#85c0a8',
+                400: '#5ea385',
+                500: '#509573',
+                600: '#3d765a',
+                700: '#325e49',
+                800: '#284a3b',
+                900: '#213d31',
+              },
+              purple: {
+                50: '#f8fafc',
+                100: '#f1f5f9',
+                200: '#e2e8f0',
+                300: '#cbd5e1',
+                400: '#94a3b8',
+                500: '#64748b',
+                600: '#475569',
+                700: '#334155',
+                800: '#1e293b',
+                900: '#0f172a',
+              },
+              cream: {
+                50: '#fcfbf9',
+                100: '#f5f5f4',
+                200: '#e7e5e4',
+              },
+              charcoal: {
+                800: '#374151',
+                900: '#1f2937',
+              }
+            }
+          }
+        }
+      }
+    </script>
+
+    <script>
+      if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
+    <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "jspdf": "https://aistudiocdn.com/jspdf@^2.5.1",
+    "jspdf-autotable": "https://aistudiocdn.com/jspdf-autotable@^3.8.2",
+    "mysql2/": "https://aistudiocdn.com/mysql2@^3.15.3/",
+    "bcryptjs": "https://aistudiocdn.com/bcryptjs@^3.0.3",
+    "nodemailer": "https://aistudiocdn.com/nodemailer@^7.0.11",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0",
+    "https": "https://esm.sh/https@^1.0.0",
+    "url": "https://esm.sh/url@^0.11.4",
+    "path": "https://esm.sh/path@^0.12.7"
+  }
+}
+</script>
+</head>
+  <body class="bg-cream-50 text-charcoal-900 antialiased dark:bg-gray-900 dark:text-gray-100 transition-colors duration-200 font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

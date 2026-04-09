@@ -1,0 +1,8 @@
+{
+  "name": "MeConta",
+  "description": "Aplicativo de gestão financeira pessoal com IA para categorização automática de recibos, chatbot consultor e visualização de metas.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
